@@ -1,0 +1,6 @@
+framework module UIRadioButton {
+  umbrella header "UIRadioButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
