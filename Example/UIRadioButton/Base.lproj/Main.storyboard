@@ -1,25 +1,129 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1MZ-Lg-XJe">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="iHg-I4-wvf">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1MZ-Lg-XJe" customClass="ViewController" customModule="UIRadioButton_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="4JX-Nh-Oxe"/>
+                        <viewControllerLayoutGuide type="bottom" id="ga1-va-tk6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <view key="view" contentMode="scaleToFill" id="iuS-bd-pQA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuQ-ar-J94">
+                                <rect key="frame" x="67" y="270" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ys-t2-8a0">
+                                        <rect key="frame" x="87" y="99" width="65.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5t-Zc-njp" customClass="UIRadioButton" customModule="UIRadioButton">
+                                        <rect key="frame" x="105" y="49" width="30" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="eHT-7x-hu4"/>
+                                            <constraint firstAttribute="width" constant="30" id="kZB-0L-X8W"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.98431372549999996" green="0.66666666669999997" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Op9-YE-RFU" customClass="UIRadioButton" customModule="UIRadioButton">
+                                        <rect key="frame" x="155" y="49" width="30" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="f7c-eM-dzz"/>
+                                            <constraint firstAttribute="width" constant="30" id="lyH-FJ-ZrQ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.56862745100000001" green="0.74509803919999995" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="8gw-BR-vil" customClass="UIRadioButton" customModule="UIRadioButton">
+                                        <rect key="frame" x="55" y="49" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="a8o-aS-Xs3"/>
+                                            <constraint firstAttribute="height" constant="30" id="pGl-68-eIG"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="F3r-Wu-jFV"/>
+                                    <constraint firstItem="k5t-Zc-njp" firstAttribute="leading" secondItem="8gw-BR-vil" secondAttribute="trailing" constant="20" id="HnR-I2-mIa"/>
+                                    <constraint firstItem="9Ys-t2-8a0" firstAttribute="top" secondItem="k5t-Zc-njp" secondAttribute="bottom" constant="20" id="IAG-fM-TJx"/>
+                                    <constraint firstItem="k5t-Zc-njp" firstAttribute="centerY" secondItem="nuQ-ar-J94" secondAttribute="centerY" id="IFe-eG-6p5"/>
+                                    <constraint firstItem="Op9-YE-RFU" firstAttribute="leading" secondItem="k5t-Zc-njp" secondAttribute="trailing" constant="20" id="K7T-YZ-4Qg"/>
+                                    <constraint firstItem="8gw-BR-vil" firstAttribute="centerY" secondItem="nuQ-ar-J94" secondAttribute="centerY" id="Qb8-wK-VSj"/>
+                                    <constraint firstItem="k5t-Zc-njp" firstAttribute="centerX" secondItem="nuQ-ar-J94" secondAttribute="centerX" id="a8Y-JK-aZX"/>
+                                    <constraint firstItem="9Ys-t2-8a0" firstAttribute="centerX" secondItem="nuQ-ar-J94" secondAttribute="centerX" id="euV-D4-ABz"/>
+                                    <constraint firstAttribute="height" constant="128" id="fk7-48-akw"/>
+                                    <constraint firstItem="Op9-YE-RFU" firstAttribute="centerY" secondItem="nuQ-ar-J94" secondAttribute="centerY" id="xDD-mA-DA6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GK-59-pJW" customClass="UIRadioButton" customModule="UIRadioButton">
+                                <rect key="frame" x="242" y="575" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="83r-v8-kgD"/>
+                                    <constraint firstAttribute="height" constant="30" id="MMc-mO-jMk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dumpBt4Value:" destination="1MZ-Lg-XJe" eventType="valueChanged" id="MXu-9G-hBI"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgg-EX-Kjv">
+                                <rect key="frame" x="220" y="613" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xgg-EX-Kjv" firstAttribute="top" secondItem="9GK-59-pJW" secondAttribute="bottom" constant="8" id="9QU-jC-yLn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9GK-59-pJW" secondAttribute="trailing" constant="87" id="9bB-ro-Xsf"/>
+                            <constraint firstItem="nuQ-ar-J94" firstAttribute="centerX" secondItem="iuS-bd-pQA" secondAttribute="centerX" id="J5a-er-dKV"/>
+                            <constraint firstItem="nuQ-ar-J94" firstAttribute="centerY" secondItem="iuS-bd-pQA" secondAttribute="centerY" id="qab-m0-cfK"/>
+                            <constraint firstItem="ga1-va-tk6" firstAttribute="top" secondItem="9GK-59-pJW" secondAttribute="bottom" constant="62" id="tj6-sm-b7W"/>
+                            <constraint firstItem="Xgg-EX-Kjv" firstAttribute="centerX" secondItem="9GK-59-pJW" secondAttribute="centerX" id="xV8-Si-UhO"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bt1" destination="8gw-BR-vil" id="LaL-i6-KSd"/>
+                        <outlet property="bt2" destination="k5t-Zc-njp" id="7ah-HA-l8g"/>
+                        <outlet property="bt3" destination="Op9-YE-RFU" id="Wyd-SM-1nI"/>
+                        <outlet property="bt4" destination="9GK-59-pJW" id="yGE-Qd-Owc"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9YG-ue-yBR" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="266.5" y="429.5"/>
         </scene>
     </scenes>
 </document>

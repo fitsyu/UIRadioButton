@@ -10,6 +10,7 @@
 		03A9FD93E86C0CD07A37D7BF34A02F09 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F915F8C8679193EEFD293EC4CCA6C6 /* Match.swift */; };
 		07DECC64B9B23D49E4A65BED42C7A314 /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E8F0A0B14361B2EAE4D0DA0BE57EB /* QuickConfiguration.m */; };
 		0A215055DE00585D4A5B2A2B1DEE6FB0 /* NSString+QCKSelectorName.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F2569FC59B67E76E570E93D89731EB /* NSString+QCKSelectorName.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B9E38C3CAA9911894A2C55820A95411 /* UIRadioButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC32979A24B36A43C27CD1CC8C15968B /* UIRadioButtonGroup.swift */; };
 		109EB99F003668E3ED3868B57E1071AF /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D16A43EE01CEF8E86984264FDF2C3A /* ExampleMetadata.swift */; };
 		112614F21939902B59102E6E876ADCBC /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC724D753931716676AE42503730DBC6 /* RaisesException.swift */; };
 		11C22C7B844DF31A5EBDC9AC132C5E94 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E3C353118B3E2CA476674EC4BBCED6 /* UIImage+Compare.m */; };
@@ -45,6 +46,7 @@
 		5104AE2989305145BF446E633B567924 /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772D3E5AF34E2F6DC985845FB3489AF /* EndWith.swift */; };
 		5189441A2C7D6730AE3D5B90C4C8166A /* UIRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ECE6D8041A5A8F7472259CB6C3D1074 /* UIRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5438871833E759C86C2CA743AD3EF2DD /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD9B4FF295C9E0487B426B9968F28B /* World.swift */; };
+		5EDE0F76618F794BF50EEB89086CDE50 /* UIRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F06F07E21971914D6D26EBD1A68881 /* UIRadioButton-dummy.m */; };
 		5EF5C00C6AECE1FCFFF118577817F5CE /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786FE4B4725F603253354543D534DE89 /* Equal.swift */; };
 		61EBC5CF0D5E065C88028B49C6B8D3B3 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 599644A4F7E0D425F0BAAE68F5028FBE /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		636A1DD83197D4668B43CC94E874E892 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD73863B384083727F1E1F1433B8FEF /* Callsite.swift */; };
@@ -86,12 +88,10 @@
 		9BAEE6A607528BBFAA526CFFA5277E43 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8B8308864A130D630110C7734744E /* ExampleHooks.swift */; };
 		9C071DE91DC8B8FC5C0BAAEABE72F2BB /* Pods-UIRadioButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C2489F794DBC331D49C8D6C0D6B790 /* Pods-UIRadioButton_Tests-dummy.m */; };
 		9C185CB0E0636BD9DD3E9E96A0462317 /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B112F1E9B122094C5F127A0CA8E480 /* NSString+QCKSelectorName.m */; };
-		9E7A19787CF172835EAF2E023680E0CF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C362C0D31FCDAB58AD5C96B98A47CD /* ReplaceMe.swift */; };
 		9EE41FAF2A88E2DCEEE2C974E33C398E /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 3358B5E8463BBBF73653B2FBB6916DE5 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F08F74CB8740CF0EFF26746EEB0C930 /* CurrentTestCaseTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 36215F7E5778F54BA3D2A39454D4B03F /* CurrentTestCaseTracker.m */; };
 		9FA3B93CE0ECAC3CDC30890659AACF82 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 2518F997765A59F844B6A841E7723FA7 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1253488850CE3B86ED19CB93A9CD3D5 /* HaveValidSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B4A87FE17DFB2CCA9CAD7D79D0D48 /* HaveValidSnapshot.swift */; };
-		A12BCD4ED8F194F55D18576DBEC66FC9 /* UIRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F06F07E21971914D6D26EBD1A68881 /* UIRadioButton-dummy.m */; };
 		A2CABD326609AD67377700A148785E09 /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583345A544DBE4373F3BB917431FFAF /* BeAnInstanceOf.swift */; };
 		A374A2729E32469085C5025EC7115EB8 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249D2638D0070442D0D750885D075640 /* Stringers.swift */; };
 		A55EC200F57C00E9A78D8A9DA4545338 /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2C7849BF96607CCC8F48B5000898E /* HaveCount.swift */; };
@@ -119,6 +119,7 @@
 		D39D7A9422384FEA6463626792C00FF4 /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF343DFD1C01B260FA04D422349D426 /* QuickSpec.m */; };
 		D41F628A81153A978EB209E4FE925700 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E65CDBFB735DF3AD2C40D79C63092DF /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5C30BC656C11AF60394E3180A217BB1 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = B28003917869A306C9497FB3139B5550 /* UIImage+Snapshot.m */; };
+		DA50A2C8B03BF454CD22CF9E783C22D6 /* UIRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A4FA340C03E4D3519F701A9DC2AA9 /* UIRadioButton.swift */; };
 		DCA54337E8687685A293CC24A97F936C /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168FB3F77E4C4F8A60BD0821D35D19C7 /* Contain.swift */; };
 		DF0216DBDE0084F6C87FE9275A4E9F0D /* Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F65877051A80854B8307C51E5BF152 /* Nimble-dummy.m */; };
 		E3B1EAAC82543C09339AE71FE9B31AEC /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 7395C69488EE986713CFCD76E434400B /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -247,6 +248,7 @@
 		4D582674A6983604C34B81F809F76255 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4ECE6D8041A5A8F7472259CB6C3D1074 /* UIRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIRadioButton-umbrella.h"; sourceTree = "<group>"; };
 		5038A9C14E90AA451724DCD0D3FCA8BA /* NSBundle+CurrentTestBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSBundle+CurrentTestBundle.swift"; path = "Sources/Quick/NSBundle+CurrentTestBundle.swift"; sourceTree = "<group>"; };
+		512A4FA340C03E4D3519F701A9DC2AA9 /* UIRadioButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIRadioButton.swift; sourceTree = "<group>"; };
 		55F745BF7544446A58DD23642DDBFA59 /* Pods-UIRadioButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIRadioButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		599644A4F7E0D425F0BAAE68F5028FBE /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		5AD55F3974939097556240403DEE2DFF /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -305,6 +307,7 @@
 		B9BE17B17224F1CFB41B978B8ADBE564 /* Pods_UIRadioButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIRadioButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D6AF1AB45E76B352DD93ACE676230A /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Sources/Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
 		BAEE0AA407B501B27CD879CF8E608E81 /* World+DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "World+DSL.h"; path = "Sources/Quick/DSL/World+DSL.h"; sourceTree = "<group>"; };
+		BC32979A24B36A43C27CD1CC8C15968B /* UIRadioButtonGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIRadioButtonGroup.swift; sourceTree = "<group>"; };
 		BDC4C06A00F57A3332BFBC63C0DA3F1E /* ExceptionCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExceptionCapture.swift; path = Sources/Nimble/Utils/ExceptionCapture.swift; sourceTree = "<group>"; };
 		BF020B3F8925A7259B302A2BF510BA39 /* Pods-UIRadioButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIRadioButton_Example-dummy.m"; sourceTree = "<group>"; };
 		BF2C8E711729FB4599F51C263CB8965D /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Sources/Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
@@ -332,7 +335,6 @@
 		DE300E3EAEB55D242BB905111CE02C5A /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Sources/Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
 		E0CB59E222B52B1A8991F62947171AD6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1779E044669551E8B160513DD6BAB20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2C362C0D31FCDAB58AD5C96B98A47CD /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		E456588A7D5D494914B25F6F2C50662A /* Nimble-Snapshots.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Nimble-Snapshots.modulemap"; sourceTree = "<group>"; };
 		E49C95F056009CC789247F71C33EB79A /* Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-prefix.pch"; sourceTree = "<group>"; };
 		E5ED07DD414CF7F840B74687B5F27771 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -620,7 +622,7 @@
 			isa = PBXGroup;
 			children = (
 				FD8012BD56367A209D60D491287E5EC6 /* Support Files */,
-				F46771E13A4B918301B1C1F7B8C81C04 /* UIRadioButton */,
+				D0D859E677D461F5B14C7DF5A30F7A79 /* UIRadioButton */,
 			);
 			name = UIRadioButton;
 			path = ../..;
@@ -636,14 +638,6 @@
 				6B41449469EC9A731285A710A47BA1E8 /* Products */,
 				2169E8F9F0E879300EE52DA38562D0FA /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8121CEBD7732438797C278D0259BFB84 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E2C362C0D31FCDAB58AD5C96B98A47CD /* ReplaceMe.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		85A43A897BC9F9E165C5AC35B1C0A8AC /* Support Files */ = {
@@ -736,6 +730,23 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		D0D859E677D461F5B14C7DF5A30F7A79 /* UIRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				E98DE4FE923FACC96D72C3FE38469AFA /* Classes */,
+			);
+			path = UIRadioButton;
+			sourceTree = "<group>";
+		};
+		E98DE4FE923FACC96D72C3FE38469AFA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				512A4FA340C03E4D3519F701A9DC2AA9 /* UIRadioButton.swift */,
+				BC32979A24B36A43C27CD1CC8C15968B /* UIRadioButtonGroup.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		EA67980F3674E1C430257DABE9A2CF24 /* FBSnapshotTestCase */ = {
 			isa = PBXGroup;
 			children = (
@@ -744,14 +755,6 @@
 				C3FC6E94E1C792D1AC95AFE79915C5EF /* SwiftSupport */,
 			);
 			path = FBSnapshotTestCase;
-			sourceTree = "<group>";
-		};
-		F46771E13A4B918301B1C1F7B8C81C04 /* UIRadioButton */ = {
-			isa = PBXGroup;
-			children = (
-				8121CEBD7732438797C278D0259BFB84 /* Classes */,
-			);
-			path = UIRadioButton;
 			sourceTree = "<group>";
 		};
 		FD8012BD56367A209D60D491287E5EC6 /* Support Files */ = {
@@ -865,7 +868,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E7C222C1BD4A0AD5BCAD7C9A6B0DF77 /* Build configuration list for PBXNativeTarget "UIRadioButton" */;
 			buildPhases = (
-				821EF68FCCDA59F56839922645A9BD3D /* Sources */,
+				BA1D426F1D08CF98D89AF30B43FDAB4B /* Sources */,
 				D5A08AA3C289D588AC23E26BAC1B3035 /* Frameworks */,
 				3CA10DBA0640716989EC8ED7E96CA9C4 /* Headers */,
 			);
@@ -1099,15 +1102,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		821EF68FCCDA59F56839922645A9BD3D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9E7A19787CF172835EAF2E023680E0CF /* ReplaceMe.swift in Sources */,
-				A12BCD4ED8F194F55D18576DBEC66FC9 /* UIRadioButton-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		90005802BE3550EA71100B74378F26F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1144,6 +1138,16 @@
 				BBE10615F3CD16FAF02BBD3D42B6D246 /* World+DSL.swift in Sources */,
 				5438871833E759C86C2CA743AD3EF2DD /* World.swift in Sources */,
 				7929623E9CC7C966AD703F6410B3935A /* XCTestSuite+QuickTestSuiteBuilder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA1D426F1D08CF98D89AF30B43FDAB4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDE0F76618F794BF50EEB89086CDE50 /* UIRadioButton-dummy.m in Sources */,
+				DA50A2C8B03BF454CD22CF9E783C22D6 /* UIRadioButton.swift in Sources */,
+				0B9E38C3CAA9911894A2C55820A95411 /* UIRadioButtonGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

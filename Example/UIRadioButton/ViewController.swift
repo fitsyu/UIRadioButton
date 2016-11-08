@@ -7,17 +7,34 @@
 //
 
 import UIKit
+import UIRadioButton
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var bt1: UIRadioButton!
+    @IBOutlet weak var bt2: UIRadioButton!
+    @IBOutlet weak var bt3: UIRadioButton!
+    
+    @IBOutlet weak var bt4: UIRadioButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // create group for bt1, bt2, bt3
+        let group = UIRadioButtonGroup()
+        group.add(bt1)
+        group.add(bt2)
+        group.add(bt3)
+        
+        // to start off
+        group.deselectAll()
+        
+        // preselect one
+        group.select(bt3)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func dumpBt4Value(sender: UIRadioButton) {
+        print(bt4.selected)
     }
 
 }
