@@ -46,6 +46,10 @@ public class UIRadioButton: UIControl {
         construct()
     }
     
+//    init(color: UIColor, selected: Bool){
+//        self.selected = selected
+//        tintColor     = color
+//    }
     
     func construct() {
         tintColor = color
@@ -77,16 +81,20 @@ public class UIRadioButton: UIControl {
     
     // MARK: The Magic
     override public func drawRect(rect: CGRect) {
-        
+
         // draw the outer ring
-        let radio = UIBezierPath(ovalInRect: rect.insetBy(dx: 2, dy: 2))
+        var margin = CGFloat(2)
+        
+        let radio = UIBezierPath(ovalInRect: rect.insetBy(dx: margin, dy: margin))
         color.setStroke()
         radio.lineWidth = 2.0
         radio.stroke()
         
         // draw the inner hole
         if selected {
-            let button = UIBezierPath(ovalInRect: rect.insetBy(dx: 4, dy: 4))
+            margin = CGFloat(6)
+            
+            let button = UIBezierPath(ovalInRect: rect.insetBy(dx: margin, dy: margin))
             color.setFill()
             button.fill()
         }
