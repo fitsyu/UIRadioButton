@@ -22,14 +22,14 @@ public class UIRadioButtonGroup {
         self.radioButtons = radioButtons
     }
     
-    public func add(radioButton: UIRadioButton) {
+    public func add(_ radioButton: UIRadioButton) {
         radioButtons.append(radioButton)
         radioButton.group = self
     }
     
-    public func del(radioButton: UIRadioButton) {
-        if let idx = radioButtons.indexOf(radioButton) {
-            radioButtons.removeAtIndex(idx)
+    public func del(_ radioButton: UIRadioButton) {
+        if let idx = radioButtons.firstIndex(of: radioButton) {
+            radioButtons.remove(at: idx)
             radioButton.group = nil
         }
     }
@@ -37,16 +37,16 @@ public class UIRadioButtonGroup {
     
     
     
-    public func select(radioButton: UIRadioButton) {
+    public func select(_ radioButton: UIRadioButton) {
         deselectAll()
-        radioButton.selected = true
+        radioButton.isSelected = true
         
         selectedRadioButton = radioButton
     }
     
     public func deselectAll() {
         for button in radioButtons {
-            button.selected = false
+            button.isSelected = false
         }
     }
 }

@@ -13,11 +13,11 @@ public class UIRadioButton: UIControl {
     
     // MARK: Inspectables
     
-    @IBInspectable var color: UIColor = UIColor.orangeColor()
-    @IBInspectable override public var selected: Bool {
+    @IBInspectable var color: UIColor = UIColor.orange
+    @IBInspectable override public var isSelected: Bool {
         didSet {
             setNeedsDisplay()
-            sendActionsForControlEvents(.ValueChanged)
+            sendActions(for: .valueChanged)
         }
     }
     
@@ -46,14 +46,14 @@ public class UIRadioButton: UIControl {
         construct()
     }
     
-//    init(color: UIColor, selected: Bool){
-//        self.selected = selected
+//    init(color: UIColor, isSelected: Bool){
+//        self.isSelected = isSelected
 //        tintColor     = color
 //    }
     
     func construct() {
         tintColor = color
-        backgroundColor = UIColor.clearColor()
+        backgroundColor = UIColor.clear
     }
     
     // ==================================================
@@ -62,17 +62,18 @@ public class UIRadioButton: UIControl {
     // MARK: Interaction logic
     var group: UIRadioButtonGroup?
     
-    override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        if let _ = group {
-            group!.select(self)
+        if let group = group {
+            group.select(self)
         } else {
             toggleSelected()
         }
     }
+
     
     func toggleSelected() {
-        selected = !selected
+        isSelected = !isSelected
     }
     
     
@@ -80,21 +81,21 @@ public class UIRadioButton: UIControl {
     // ==================================================
     
     // MARK: The Magic
-    override public func drawRect(rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
 
         // draw the outer ring
         var margin = CGFloat(2)
         
-        let radio = UIBezierPath(ovalInRect: rect.insetBy(dx: margin, dy: margin))
+        let radio = UIBezierPath(ovalIn: rect.insetBy(dx: margin, dy: margin))
         color.setStroke()
         radio.lineWidth = 2.0
         radio.stroke()
         
         // draw the inner hole
-        if selected {
+        if isSelected {
             margin = CGFloat(6)
             
-            let button = UIBezierPath(ovalInRect: rect.insetBy(dx: margin, dy: margin))
+            let button = UIBezierPath(ovalIn: rect.insetBy(dx: margin, dy: margin))
             color.setFill()
             button.fill()
         }
