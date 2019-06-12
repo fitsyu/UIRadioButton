@@ -33,8 +33,8 @@ class ViewController: UIViewController {
         group.select(bt3)
     }
     
-    @IBAction func dumpBt4Value(sender: UIRadioButton) {
-        print(bt4.selected)
+    @IBAction func dumpBt4Value(_ sender: UIRadioButton) {
+        print(bt4.isSelected)
     }
 
 }

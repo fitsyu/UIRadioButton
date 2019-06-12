@@ -1,11 +1,12 @@
+import Dispatch
 import Foundation
 
 /// "Global" state of Nimble is stored here. Only DSL functions should access / be aware of this
-/// class' existance
-internal class NimbleEnvironment {
+/// class' existence
+internal class NimbleEnvironment: NSObject {
     static var activeInstance: NimbleEnvironment {
         get {
-            let env = NSThread.currentThread().threadDictionary["NimbleEnvironment"]
+            let env = Thread.current.threadDictionary["NimbleEnvironment"]
             if let env = env as? NimbleEnvironment {
                 return env
             } else {
@@ -15,24 +16,28 @@ internal class NimbleEnvironment {
             }
         }
         set {
-            NSThread.currentThread().threadDictionary["NimbleEnvironment"] = newValue
+            Thread.current.threadDictionary["NimbleEnvironment"] = newValue
         }
     }
 
+    // swiftlint:disable:next todo
     // TODO: eventually migrate the global to this environment value
     var assertionHandler: AssertionHandler {
         get { return NimbleAssertionHandler }
         set { NimbleAssertionHandler = newValue }
     }
 
-#if _runtime(_ObjC)
+    var suppressTVOSAssertionWarning: Bool = false
     var awaiter: Awaiter
 
-    init() {
+    override init() {
+        let timeoutQueue = DispatchQueue.global(qos: .userInitiated)
         awaiter = Awaiter(
             waitLock: AssertionWaitLock(),
-            asyncQueue: dispatch_get_main_queue(),
-            timeoutQueue: dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0))
+            asyncQueue: .main,
+            timeoutQueue: timeoutQueue
+        )
+
+        super.init()
     }
-#endif
 }

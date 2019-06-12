@@ -1,35 +1,27 @@
 PODS:
-  - FBSnapshotTestCase (2.1.2):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
-  - FBSnapshotTestCase/Core (2.1.2)
-  - FBSnapshotTestCase/SwiftSupport (2.1.2):
-    - FBSnapshotTestCase/Core
-  - Nimble (3.2.0)
-  - Nimble-Snapshots (4.1.0):
-    - FBSnapshotTestCase (~> 2.0)
-    - Nimble
-    - Quick
-  - Quick (0.9.3)
+  - Nimble (8.0.2)
+  - Quick (2.1.0)
   - UIRadioButton (0.1.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
-  - Nimble (~> 3.0)
-  - Nimble-Snapshots
-  - Quick (~> 0.8)
+  - Nimble
+  - Quick
   - UIRadioButton (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
 
 EXTERNAL SOURCES:
   UIRadioButton:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
-  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
-  Nimble-Snapshots: 2da4d2ec829b458d6886c06812c52493fce284c9
-  Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   UIRadioButton: 66fc14fb652ef3f3b013d1880053af98b1c70d9c
 
-PODFILE CHECKSUM: fff8ecb34f0347256bc1db8e1d8423b88a00d49e
+PODFILE CHECKSUM: 776898c441d3d2888a09bcefec0da7191ae5ce5c
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.6.1

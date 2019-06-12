@@ -1,12 +1,14 @@
 import Foundation
 
-extension SequenceType {
-    internal func all(fn: Generator.Element -> Bool) -> Bool {
+#if !swift(>=4.2)
+extension Sequence {
+    internal func allSatisfy(_ predicate: (Element) throws -> Bool) rethrows -> Bool {
         for item in self {
-            if !fn(item) {
+            if try !predicate(item) {
                 return false
             }
         }
         return true
     }
 }
+#endif
